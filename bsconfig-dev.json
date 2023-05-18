@@ -16,7 +16,10 @@
     "!../src-dev/source/**/*.spec.bs",
     "!**/*.spec.bs"
   ],
-  "plugins": ["maestro-roku-bsc-plugin", "roku-log-bsc-plugin"],
+  "plugins": [
+    "maestro-roku-bsc-plugin",
+    "roku-log-bsc-plugin"
+  ],
   "diagnosticFilters": [
     {
       "src": "**/roku_modules/**/*.*"

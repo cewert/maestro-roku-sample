@@ -1,5 +1,5 @@
 {
-  "stagingFolderDir": "build",
+  "stagingDir": "build",
   "rootDir": "src",
   "files": [
     "!**/*.i8n.json",
