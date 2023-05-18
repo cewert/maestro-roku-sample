@@ -75,6 +75,6 @@
     "postinstall": "npm run build-scripts && npm run ropm",
     "ropm": "ropm copy && node scripts/maestro-ropm-hook.js",
     "tslint": "eslint \"scripts/**/*.ts\"",
-    "update-schema": "npm run build && cd build && npx scenegraph-schema -o ../.vscode/project.xsd",
+    "update-schema": "npm run build && cd build && npx scenegraph-schema -o ../.vscode/project.xsd"
   }
 }
