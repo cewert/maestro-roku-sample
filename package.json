@@ -65,15 +65,16 @@
     ]
   },
   "scripts": {
-    "postinstall": "npm run build-scripts && npm run ropm",
-    "update-schema": "npm run build && cd build && npx scenegraph-schema -o ../.vscode/project.xsd",
-    "ropm": "ropm copy",
-    "build": "node scripts/run prod",
-    "build-scripts": "rm -rf build-scripts && npx tsc",
+    "build": "npm run build-dev",
     "build-dev": "node scripts/run.js dev",
-    "build-test": "node scripts/run.js test",
+    "build-prod": "node scripts/run prod",
+    "build-scripts": "rm -rf build-scripts && npx tsc",
     "build-tdd": "node scripts/run.js tdd",
+    "build-test": "node scripts/run.js test",
     "lint": "npx bslint",
-    "tslint": "eslint \"scripts/**/*.ts\""
+    "postinstall": "npm run build-scripts && npm run ropm",
+    "ropm": "ropm copy",
+    "tslint": "eslint \"scripts/**/*.ts\"",
+    "update-schema": "npm run build && cd build && npx scenegraph-schema -o ../.vscode/project.xsd",
   }
 }
