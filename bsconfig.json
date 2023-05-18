@@ -1,5 +1,5 @@
 {
-  "stagingFolderPath": "build",
+  "stagingFolderDir": "build",
   "rootDir": "src",
   "files": [
     "!**/*.i8n.json",
@@ -64,7 +64,7 @@
     "removeComments": true
   },
   "logLevel": "error",
-  "retainStagingFolder": true,
+  "retainStagingDir": true,
   "transpileOptions": {
     "removeParameterTypes": true
   },
